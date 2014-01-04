@@ -18,7 +18,7 @@ public class Q4 {
 		  // Initialize cards
 	    for (int i = 0; i < deck.length; i++)
 	      deck[i] = i;	
-	    System.out.println("Enter which a stake you like to play with : ");
+	    System.out.println("Enter s stake you would like to play : ");
 	    stake = s.nextInt();
 	    setupNewGame();
 	    System.out.println(caluclateScore(dealer));
@@ -33,17 +33,17 @@ public class Q4 {
 	 	    	count++;
 	 	    	finishDealersPlay();
 	 	    	if(caluclateWinnings() == 0){
-	 	    		System.out.println("its a draw");
+	 	    		System.out.println("its a DRAW");
 	 	    		System .exit(1);
 				}
 	 	    	else if(caluclateWinnings() == 1){
-	 	    		System.out.println("player won");
+	 	    		System.out.println("player WON");
 	 	    		bank = bank + stake;
 	 	    		System.out.println(bank);
 	 	    		System .exit(1);
 	 	    	}
 	 	    	else if(caluclateWinnings() == -1){
-	 	    		System.out.println("dealer won");
+	 	    		System.out.println("dealer WON");
 	 	    		bank = bank - stake;
 	 	    		System.out.println(bank);
 	 	    		System .exit(1);
@@ -82,18 +82,18 @@ public class Q4 {
 			  dealer[dealercount++] = rank; 
 			  printHand(dealer);
 			  if(caluclateWinnings() == 0){
-				  System.out.println("its a draw");
+				  System.out.println("its a DRAW");
 				  System.out.println(bank);
 				  System .exit(1);
 			  }
 			  else if(caluclateWinnings() == 1){
-				  System.out.println("player won");
+				  System.out.println("player WON");
 				  bank = bank + stake;
 				  System.out.println(bank);
 				  System .exit(1);
 			  }
 			  else if(caluclateWinnings() == -1){
-				  System.out.println("dealer won");
+				  System.out.println("dealer WON");
 				  bank = bank - stake;
 				  System.out.println(bank);
 				  System .exit(1);
@@ -117,18 +117,18 @@ public class Q4 {
 		 player[playercount++] = rank;
 		 printHand(player);	
 		 if(caluclateWinnings() == 0){
-			 System.out.println("its a draw");
+			 System.out.println("its a DRAW");
 			 System.out.println(bank);
 			 System .exit(1);
 		 }
 		 else if(caluclateWinnings() == 1){
-			 System.out.println("player won");
+			 System.out.println("player WON");
 			 bank = bank + stake;
 			 System.out.println(bank);
 			 System .exit(1);
 		 }
 		 else if(caluclateWinnings() == -1){
-			 System.out.println("dealer won");
+			 System.out.println("dealer WON");
 			 bank = bank - stake;
 			 System.out.println(bank);
 			 System .exit(1);
@@ -164,18 +164,18 @@ public class Q4 {
 			  dealer[dealercount++] = rank;  
 			  printHand(dealer);
 			  if(caluclateWinnings() == 0){
-				  System.out.println("its a draw");
+				  System.out.println("its a DRAW");
 				  System.out.println(bank);
 				  System .exit(1);
 			  }
 			  else if(caluclateWinnings() == 1){
-				  System.out.println("player won");
+				  System.out.println("player WON");
 				  bank = bank + stake;
 				  System.out.println(bank);
 				  System .exit(1);
 			  }
 			  else if(caluclateWinnings() == -1){
-				  System.out.println("dealer won");
+				  System.out.println("dealer WON");
 				  bank = bank - stake;
 				  System.out.println(bank);
 				  System .exit(1);
